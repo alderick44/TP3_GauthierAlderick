@@ -1,2 +1,7 @@
 .btn-panier{
+    scale: 1;
+}
+header:hover{
+    position: sticky !important;
+    top: 0px !important;
 }
