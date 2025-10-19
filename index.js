@@ -15,14 +15,14 @@ else if (hauteurTexteGauche < hauteurTexteDroite) {
 /*--------------------------------------------------------------------------------------------*/
 let btnPanier = document.getElementsByClassName("btn-panier");
 let panier = parseInt(document.getElementById("panier").textContent);
+for (let i = 0; i < btnPanier.length; i++) {
+    btnPanier[i].addEventListener("click", () => {ajouterAuPanier();});
+}
 function ajouterAuPanier() {
     panier = panier + 1;
     document.getElementById("panier").textContent = panier;
     console.log("Panier: " + panier);
     afficherHeader();
-}
-for (let i = 0; i < btnPanier.length; i++) {
-    btnPanier[i].addEventListener("click", () => {ajouterAuPanier();});
 }
 function afficherHeader(){
     enregistrerScrollUtilisateur();
@@ -53,7 +53,7 @@ function revertBackgroundDroite() {
 /*--------------------------------------------------------------------------------------------*/
 let compteurScroll = 0;
 let valeurDuDernierScroll = 0;
-let headerStatic = true;
+let headerStaticCheck = true;
 window.addEventListener("scroll", () => enregistrerScrollUtilisateur());
 function enregistrerScrollUtilisateur(){
     rendreHeaderSticky();
@@ -61,9 +61,9 @@ function enregistrerScrollUtilisateur(){
     if (compteurScroll % 10 == 0){
         console.log("Scroll : " + compteurScroll);
     }
-    if (headerStatic == true){
-    setTimeout(enregistrerDernierScroll(), 1500);
-    headerStatic = false;
+    if (headerStaticCheck == true){
+    setTimeout(enregistrerDernierScroll, 1500);
+    headerStaticCheck = false;
     }
 }
 function enregistrerDernierScroll() {
@@ -86,7 +86,7 @@ function verifierScroll(){
 function rendreHeaderStatic(){
     document.getElementById("header").style.position = "static";
     document.getElementById("header").style.top = "0";
-    headerStatic = true;
+    headerStaticCheck = true;
 }
 function rendreHeaderSticky(){
     document.getElementById("header").style.position = "sticky";
