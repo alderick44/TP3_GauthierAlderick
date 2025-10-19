@@ -1,3 +1,49 @@
+:root{
+    /*rouge : c2371f */
+    --color-red: #c2371f;
+    --color-red-dark: #701a0b;
+    --color-red-light: #e44125;
+    
+    --bs-dark: #b5a4d1;
+    --bs-dark-rgb: 19, 0, 49;
+
+    --bs-dark-bg-subtle: #364c70 ; /*Bannière*/
+    --bs-dark-bg-subtle-rgb: 54, 76, 112; 
+
+    --bs-light-bg-subtle: #ffe5e1;
+
+    --bs-light : #F7F7FF; /*Texte pâle*/
+
+    --bs-secondary : #faf0e3;
+    --bs-secondary-rgb : 250, 240, 227; /*background main*/
+
+    --bs-link-color : #faf5ef;
+    --bs-link-color-rgb : 194, 55, 31;
+
+    --bs-link-hover-color: #701a0b;
+    --bs-link-hover-color-rgb: 112, 26, 11;
+
+    --bs-body-bg: #F7F7FF; /*Footer, cards, carousel,*/
+}
+.btn-primary{
+    --bs-btn-bg : var(--color-red-light);
+    --bs-btn-border-color: var(--color-red);
+    --bs-btn-hover-bg: var(--color-red);
+    --bs-btn-hover-border-color: var(--color-red-dark);
+
+    --bs-btn-active-bg : var(--color-red-light);
+    --bs-btn-active-border-color: var(--color-red-dark);
+}
+.nav-link.active{
+    --bs-nav-underline-link-active-color: var(--color-red-light);
+}
+.nav-link{
+    --bs-nav-link-color: var(--bs-light);
+}
+.nav-link:focus, .nav-link:hover{
+    --bs-nav-link-hover-color: var(--color-red);
+}
+
 .btn-panier{
     scale: 1;
 }

@@ -31,23 +31,23 @@ function afficherHeader(){
 let ensembleGauche = document.getElementById("ensemble-gauche");
 ensembleGauche.addEventListener("mouseover", () => changerLeBackgroundGauche());
 function changerLeBackgroundGauche() {
-    ensembleGauche.style.backgroundColor = "rgba(125, 170, 210, 0.101)";
+    ensembleGauche.style.backgroundColor = "#f1f1ffff";
     console.log("Changer le background (ensemble de gauche)")
 }
 ensembleGauche.addEventListener("mouseout", () => revertBackgroundGauche());
 function revertBackgroundGauche() {
-    ensembleGauche.style.backgroundColor = "white";
+    ensembleGauche.style.backgroundColor = "#F7F7FF";
     console.log("Reverted background")
 }
 let ensembleDroite = document.getElementById("ensemble-droite");
 ensembleDroite.addEventListener("mouseover", () => changerLeBackgroundDroite());
 function changerLeBackgroundDroite() {
-    ensembleDroite.style.backgroundColor = "rgba(125, 170, 210, 0.101)";
+    ensembleDroite.style.backgroundColor = "#f1f1ffff";
     console.log("Changer le background (ensemble de droite)")
 }
 ensembleDroite.addEventListener("mouseout", () => revertBackgroundDroite());
 function revertBackgroundDroite() {
-    ensembleDroite.style.backgroundColor = "white";
+    ensembleDroite.style.backgroundColor = "#F7F7FF";
     console.log("Reverted background")
 }
 /*--------------------------------------------------------------------------------------------*/
