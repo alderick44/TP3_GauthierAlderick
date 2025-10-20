@@ -1,21 +1,16 @@
 :root{
     /*rouge : c2371f */
-
     /*
     --color-red: #c2371f;
     */
     --color-red: #9A2C19;
-
     --color-red-dark: #701a0b;
     --color-red-light: #EE7C68;
     /*
     --color-red-light: #e44125;
     */
-    
     --bs-dark: #130031;
     --bs-dark-rgb: 19, 0, 49;
-
-
     --bs-dark-bg-subtle: #1F3651;
     --bs-dark-bg-subtle-rgb: 31, 54, 81;
     /*
@@ -23,20 +18,14 @@
     /*
     --bs-dark-bg-subtle-rgb: 54, 76, 112;
     */
-
     --bs-light-bg-subtle: #ffe5e1;
-
     --bs-light : #F7F7FF; /*Texte pâle*/
-
     --bs-secondary : #faf0e3;
     --bs-secondary-rgb : 250, 240, 227; /*background main*/
-
     --bs-link-color : #faf5ef;
     --bs-link-color-rgb : 194, 55, 31;
-
     --bs-link-hover-color: #701a0b;
     --bs-link-hover-color-rgb: 112, 26, 11;
-
     --bs-body-bg: #F7F7FF; /*Footer, cards, carousel,*/
 }
 .btn-primary{
