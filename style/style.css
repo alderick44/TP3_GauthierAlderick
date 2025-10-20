@@ -43,11 +43,33 @@
 .nav-link:focus, .nav-link:hover{
     --bs-nav-link-hover-color: var(--color-red);
 }
-
 .btn-panier{
     scale: 1;
 }
 header:hover{
     position: sticky !important;
     top: 0px !important;
+}
+/*Css minimal*/
+.carousel-item {
+  img{
+    height: 70vh;
+    object-fit: contain;
+  }
+}
+.ensemble__image{
+    height: 25vh;
+    width: 35vh;
+}
+
+@media (max-width: 1400px){
+    .ensemble__image{
+        height: 35vh;
+        width: 45vh;
+    }
+    .carousel-item {
+        img{
+            height: 55vh;
+        }
+    }
 }
